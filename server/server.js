@@ -1,8 +1,9 @@
+require('dotenv').config();
 const { ApolloServer } = require('apollo-server');
 const connection = require('./config/connection');
 const typeDefs = require('./schema/typeDefs');
 const resolvers = require('./schema/resolvers');
-const { PORT } = require('./utils/config');
+const { PORT } = require('./config/config');
 
 connection();
 

@@ -4,7 +4,7 @@ const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const { registerValidator, loginValidator } = require('../../utils/validators');
 const { UserInputError } = require('apollo-server');
-const { SECRET } = require('../../utils/config');
+const { SECRET } = require('../../config/config');
 
 module.exports = {
   Query: {
